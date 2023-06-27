@@ -23,6 +23,7 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', cases, name="cases"),
     path('cases/', cases, name="cases"),
     path('case_details/<int:case_id>/', case_details, name="case_details"),
     path('cart_items/', cart_items, name="cart_items"),
